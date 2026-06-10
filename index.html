@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Walhe | Data Scientist & Analyst Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --primary: #1e40af;
+            --secondary: #0f766e;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #475569;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .badge {
+            background-color: #eff6ff;
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid #bfdbfe;
+        }
+        .badge.honors {
+            background-color: #f0fdf4;
+            color: var(--secondary);
+            border-color: #bbf7d0;
+        }
+        .links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            color: var(--text-color);
+            margin-top: 2.5rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .skill-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .skill-card ul {
+            padding-left: 1.25rem;
+            margin: 0;
+        }
+        .project-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--text-color);
+        }
+        .tech-tags span {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-right: 5px;
+            font-weight: 500;
+        }
+        .project-links {
+            margin-top: 1rem;
+        }
+        .project-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Komal Walhe</h1>
+            <p>Data Scientist & Data Analyst</p>
+            <div class="badge-container">
+                <span class="badge">Rowan University MS in Data Science (GPA: 3.90/4.0)</span>
+                <span class="badge honors">B.E. Computer Engineering with Honors in AI</span>
+            </div>
+            <div class="links">
+                <a href="https://linkedin.com/in/komalwalhe" target="_blank">LinkedIn</a> • 
+                <a href="https://github.com/KomalWalhe03" target="_blank">GitHub</a> • 
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a recent Data Science Master's graduate specializing in transforming messy, complex datasets into clear, actionable business strategies and structured engineering pipelines. My academic background combines a strong mathematical foundation in AI with hands-on practice in scalable data architecture, analytics, and operational deployment.
+            </p>
+            <p>
+                Whether building automated ETL systems, testing predictive models for healthcare risk evaluation, or diving into granular statistical trends, I design solutions aimed at driving reliable, real-world decision-making.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Toolkit</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Python (Pandas, Polars)</li>
+                        <li>SQL</li>
+                        <li>Advanced Excel</li>
+                        <li>Tableau & Power BI</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Predictive Modeling</li>
+                        <li>Feature Engineering</li>
+                        <li>Explainable AI (SHAP)</li>
+                        <li>Imbalanced Data (SMOTE)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Engineering & Ops</h3>
+                    <ul>
+                        <li>ETL Pipelines</li>
+                        <li>MLOps & MLflow</li>
+                        <li>Docker</li>
+                        <li>AWS Ecosystem</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic placeholder for the upcoming step -->
+        <section id="projects-section">
+            <h2>Featured Projects & Industry Labs</h2>
+            <p style="color: #64748b; font-style: italic;">Structuring project narratives next...</p>
+        </section>
+    </div>
+
+</body>
+</html>
