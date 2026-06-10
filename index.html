@@ -189,12 +189,89 @@
             </div>
         </section>
 
-        <!-- Dynamic placeholder for the upcoming step -->
-        <section id="projects-section">
-            <h2>Featured Projects & Industry Labs</h2>
-            <p style="color: #64748b; font-style: italic;">Structuring project narratives next...</p>
+       ```html
+        <section id="projects">
+            <h2>Featured Experience & Industry Labs</h2>
+
+            <!-- Project 1: IBM Lab -->
+            <div class="project-card">
+                <span style="float: right; font-weight: bold; color: var(--secondary);">Industry Lab</span>
+                <h3>HealthSync Application — AI Experiential Learning Lab</h3>
+                <div class="tech-tags" style="margin-bottom: 1rem;">
+                    <span>IBM Watsonx</span> <span>Agentic AI</span> <span>Python</span> <span>Data Integration</span>
+                </div>
+                <p>
+                    Collaborated on a healthcare analytics framework focused on bridging gaps between fragmented patient records and actionable clinical summaries while maintaining data privacy standards. 
+                </p>
+                <ul>
+                    <li>Leveraged generative AI models to parse complex medical documentation into structured key-value formats.</li>
+                    <li>Evaluated automated operational workflows to minimize manual screening times for data retrieval tasks.</li>
+                    <li>Designed processing logic to filter out sensitive attributes, demonstrating practical knowledge of healthcare data restrictions and compliance.</li>
+                </ul>
+                <p><strong>Analytical Impact:</strong> Provided an end-to-end blueprint showing how legacy healthcare tracking can transition safely into automated, secure intelligence platforms.</p>
+            </div>
+
+            <!-- Project 2: Chicago MLOps -->
+            <div class="project-card">
+                <span style="float: right; font-weight: bold; color: var(--primary);">Data Science / MLOps</span>
+                <h3>Chicago Taxi Price Prediction & Monitoring Pipeline</h3>
+                <div class="tech-tags" style="margin-bottom: 1rem;">
+                    <span>AWS (EC2/S3)</span> <span>MLflow</span> <span>FastAPI</span> <span>NannyML</span> <span>Python</span>
+                </div>
+                <p>
+                    Engineered a robust, production-style predictive workflow designed to predict transport fares while establishing monitoring frameworks to catch operational degradation.
+                </p>
+                <ul>
+                    <li>Configured remote tracking setups using MLflow on cloud infrastructure to benchmark diverse model run performances systematically.</li>
+                    <li>Constructed real-time inference pipelines with automated web endpoints to handle high-frequency prediction requests seamlessly.</li>
+                    <li>Integrated drift detection mechanics via NannyML to flag shifts in incoming feature distributions automatically, protecting model integrity over time.</li>
+                </ul>
+                <p><strong>Engineering Impact:</strong> Built a self-monitoring system that protects business decisions from shifting real-world data patterns post-deployment.</p>
+            </div>
+
+            <!-- Project 3: Chicago Transit Big Data -->
+            <div class="project-card">
+                <span style="float: right; font-weight: bold; color: var(--primary);">Data Engineering / Analytics</span>
+                <h3>Chicago Transit Scale Pipeline & Dashboard</h3>
+                <div class="tech-tags" style="margin-bottom: 1rem;">
+                    <span>Polars</span> <span>SQL</span> <span>Docker</span> <span>MongoDB</span> <span>Streamlit</span>
+                </div>
+                <p>
+                    Architected a big data pipeline to ingest, clean, and extract behavioral insights from over 750,000 transit records.
+                </p>
+                <ul>
+                    <li>Implemented a structured Medallion Architecture (Bronze/Silver/Gold layers) to split raw storage from analytical gold standards.</li>
+                    <li>Utilized Polars for ultra-fast multi-threaded processing, bypassing typical memory bottlenecks common with standard libraries on mass datasets.</li>
+                    <li>Deployed an interactive analytical dashboard tracking key route performance, peak volume hours, and bottleneck vectors.</li>
+                </ul>
+                <p><strong>Business Value:</strong> Transformed high-volume, erratic logistical metrics into clean visual data directly usable for fleet scheduling optimization.</p>
+            </div>
+
+            <!-- Project 4: Stroke Risk -->
+            <div class="project-card">
+                <span style="float: right; font-weight: bold; color: var(--primary);">Healthcare Analytics</span>
+                <h3>Explainable Stroke Risk Evaluation System</h3>
+                <div class="tech-tags" style="margin-bottom: 1rem;">
+                    <span>Scikit-learn</span> <span>SMOTE</span> <span>SHAP (XAI)</span> <span>Predictive Modeling</span>
+                </div>
+                <p>
+                    Developed a specialized diagnostic classification model designed to compute stroke liabilities using clinical patient metrics.
+                </p>
+                <ul>
+                    <li>Addressed high class imbalance using synthetic sampling techniques (SMOTE) to stabilize vulnerable minority class detections.</li>
+                    <li>Applied interpretable algorithmic solutions (SHAP) to unpack feature weights, making individual risk scores clear and transparent.</li>
+                    <li>Optimized classification models, shifting evaluation metrics from a baseline accuracy toward realistic clinical precision balances.</li>
+                </ul>
+                <p><strong>Clinical Value:</strong> Created an actionable approach to diagnostic screening that allows medical staff to verify the explicit reasons behind an automated risk alert.</p>
+            </div>
         </section>
-    </div>
+
+        <!-- Contact Placeholder -->
+        <section id="contact" style="background: #f1f5f9; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+            <h2>Let's Connect</h2>
+            <p>I am actively seeking Data Analyst and entry-level Data Scientist roles where I can bring immediate value to data quality and insight pipelines.</p>
+            <p>Email: <strong>your-email@example.com</strong></p>
+        </section>
 
 </body>
 </html>
