@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komal Walhe | Data Scientist & Analyst Portfolio</title>
+    <title>Komal Walhe | Data Analyst | Data Scientist</title>
     <style>
         :root {
             --bg-color: #f8fafc;
@@ -24,7 +24,7 @@
         header {
             background-color: var(--card-bg);
             border-bottom: 1px solid var(--border);
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
             text-align: center;
         }
         .container {
@@ -38,8 +38,9 @@
             color: var(--text-color);
         }
         .hero p {
-            font-size: 1.25rem;
-            color: #475569;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
             margin: 0.5rem 0 1.5rem 0;
         }
         .badge-container {
@@ -78,6 +79,16 @@
             color: var(--text-color);
             margin-top: 2.5rem;
         }
+        .summary-box {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-box ul {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -102,7 +113,7 @@
             padding: 2rem;
             border-radius: 8px;
             border: 1px solid var(--border);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         .project-card h3 {
             margin-top: 0;
@@ -117,13 +128,30 @@
             margin-right: 5px;
             font-weight: 500;
         }
+        .project-img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin: 1rem 0;
+            display: block;
+        }
         .project-links {
-            margin-top: 1rem;
+            margin-top: 1.25rem;
         }
         .project-links a {
-            color: var(--primary);
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 4px;
             text-decoration: none;
+            font-size: 0.875rem;
+            display: inline-block;
             font-weight: 500;
+        }
+        .project-links a:hover {
+            background: #1d4ed8;
         }
     </style>
 </head>
@@ -132,29 +160,30 @@
     <header>
         <div class="hero">
             <h1>Komal Walhe</h1>
-            <p>Data Scientist & Data Analyst</p>
+            <p>Data Analyst | Data Scientist</p>
             <div class="badge-container">
                 <span class="badge">Rowan University MS in Data Science (GPA: 3.90/4.0)</span>
                 <span class="badge honors">B.E. Computer Engineering with Honors in AI</span>
             </div>
             <div class="links">
-    <a href="https://linkedin.com/in/komalwalhe" target="_blank">LinkedIn</a> • 
-    <a href="https://github.com/KomalWalhe03" target="_blank">GitHub</a> • 
-    <a href="resume.pdf" download style="font-weight: bold; color: var(--secondary);">Download Resume (PDF)</a> •
-    <a href="#contact">Contact</a>
-</div>
+                <a href="https://linkedin.com/in/komalwalhe" target="_blank">LinkedIn</a> • 
+                <a href="https://github.com/KomalWalhe03" target="_blank">GitHub</a> • 
+                <a href="resume.pdf" download style="font-weight: bold; color: var(--secondary);">Download Resume (PDF)</a> •
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </header>
 
     <div class="container">
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a recent Data Science Master's graduate specializing in transforming messy, complex datasets into clear, actionable business strategies and structured engineering pipelines. My academic background combines a strong mathematical foundation in AI with hands-on practice in scalable data architecture, analytics, and operational deployment.
-            </p>
-            <p>
-                Whether building automated ETL systems, testing predictive models for healthcare risk evaluation, or diving into granular statistical trends, I design solutions aimed at driving reliable, real-world decision-making.
-            </p>
+            <h2>Professional Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li><strong>Recent M.S. Data Science Graduate</strong> from Rowan University (GPA: 3.90) with a Bachelor's in Computer Engineering (Honors in AI).</li>
+                    <li><strong>Experienced in data analytics, machine learning, and data engineering</strong> through healthcare analytics, socio-economic research, and transportation pipeline projects.</li>
+                    <li><strong>Skilled technical toolkit:</strong> Python (Pandas, Polars), SQL, Tableau, Power BI, Excel, Docker, AWS, MLflow, and Predictive Modeling.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="skills">
@@ -190,95 +219,90 @@
             </div>
         </section>
 
-       
         <section id="projects">
-            <h2>Featured Experience & Industry Labs</h2>
+            <h2>Featured Projects & Experience</h2>
 
             <!-- Project 1: IBM Lab -->
             <div class="project-card">
                 <span style="float: right; font-weight: bold; color: var(--secondary);">Industry Lab</span>
-                <h3>HealthSync Application — AI Experiential Learning Lab</h3>
+                <h3>HealthSync Application — IBM AI Experiential Learning Lab</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
-                    <span>IBM Watsonx</span> <span>Agentic AI</span> <span>Python</span> <span>Data Integration</span>
+                    <span>IBM Watsonx</span> <span>Agentic AI</span> <span>Python</span> <span>Healthcare Data</span>
                 </div>
-                <p>
-                    Collaborated on a healthcare analytics framework focused on bridging gaps between fragmented patient records and actionable clinical summaries while maintaining data privacy standards. 
-                </p>
+                <p>Built a secure healthcare analytics application to automatically clean, parse, and structure fragmented patient records into clinical insight summaries.</p>
                 <ul>
-                    <li>Leveraged generative AI models to parse complex medical documentation into structured key-value formats.</li>
-                    <li>Evaluated automated operational workflows to minimize manual screening times for data retrieval tasks.</li>
-                    <li>Designed processing logic to filter out sensitive attributes, demonstrating practical knowledge of healthcare data restrictions and compliance.</li>
+                    <li>Used generative AI workflows to process unorganized medical notes into consistent, searchable data tables.</li>
+                    <li>Designed processing steps to scrub out sensitive patient identifiers, ensuring HIPAA compliance and data privacy.</li>
                 </ul>
-                <p><strong>Analytical Impact:</strong> Provided an end-to-end blueprint showing how legacy healthcare tracking can transition safely into automated, secure intelligence platforms.</p>
+                <!-- Image Placeholder for Step 2 -->
+                <!-- <img src="healthsync.png" alt="HealthSync Verification" class="project-img"> -->
+                <p><strong>Impact:</strong> Automated manual clinical data screening, showing how healthcare platforms can safely process sensitive data with AI.</p>
             </div>
 
             <!-- Project 2: Chicago MLOps -->
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--primary);">Data Science / MLOps</span>
+                <span style="float: right; font-weight: bold; color: var(--primary);">MLOps Pipeline</span>
                 <h3>Chicago Taxi Price Prediction & Monitoring Pipeline</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
                     <span>AWS (EC2/S3)</span> <span>MLflow</span> <span>FastAPI</span> <span>NannyML</span> <span>Python</span>
                 </div>
-                <p>
-                    Engineered a robust, production-style predictive workflow designed to predict transport fares while establishing monitoring frameworks to catch operational degradation.
-                </p>
+                <p>Built an end-to-end machine learning system that processes data, makes live price predictions via an API, and monitors performance over time.</p>
                 <ul>
-                    <li>Configured remote tracking setups using MLflow on cloud infrastructure to benchmark diverse model run performances systematically.</li>
-                    <li>Constructed real-time inference pipelines with automated web endpoints to handle high-frequency prediction requests seamlessly.</li>
-                    <li>Integrated drift detection mechanics via NannyML to flag shifts in incoming feature distributions automatically, protecting model integrity over time.</li>
+                    <li>Processed 70,000+ taxi trips and tracked diverse training experiments via an MLflow remote server setup on AWS.</li>
+                    <li>Deployed a fast, live API endpoint using FastAPI to serve model predictions instantly.</li>
+                    <li>Integrated automated monitoring using NannyML to check for data drift across 2023–2024 records, ensuring model accuracy doesn't drop.</li>
                 </ul>
+                <!-- Image Placeholder for Step 2 -->
+                <!-- <img src="mlops-diagram.png" alt="MLOps Pipeline Architecture" class="project-img"> -->
                 <div class="project-links">
-    <a href="https://github.com/KomalWalhe03/Chicago-Taxi-MLOps-Pipeline" target="_blank" style="background: #1e40af; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.875rem; display: inline-block; margin-top: 0.5rem;">View GitHub Repository</a>
+                    <a href="https://github.com/KomalWalhe03/Chicago-Taxi-Fare-Prediction" target="_blank">View GitHub Repository</a>
                 </div>
-                <p><strong>Engineering Impact:</strong> Built a self-monitoring system that protects business decisions from shifting real-world data patterns post-deployment.</p>
             </div>
 
             <!-- Project 3: Chicago Transit Big Data -->
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--primary);">Data Engineering / Analytics</span>
-                <h3>Chicago Transit Scale Pipeline & Dashboard</h3>
+                <span style="float: right; font-weight: bold; color: var(--primary);">Data Pipeline & Analytics</span>
+                <h3>Chicago Transit Scale Pipeline & Interactive Dashboard</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
                     <span>Polars</span> <span>SQL</span> <span>Docker</span> <span>MongoDB</span> <span>Streamlit</span>
                 </div>
-                <p>
-                    Architected a big data pipeline to ingest, clean, and extract behavioral insights from over 750,000 transit records.
-                </p>
+                <p>Created a scalable data engineering pipeline to clean and extract traffic trends from massive transportation data layers.</p>
                 <ul>
-                    <li>Implemented a structured Medallion Architecture (Bronze/Silver/Gold layers) to split raw storage from analytical gold standards.</li>
-                    <li>Utilized Polars for ultra-fast multi-threaded processing, bypassing typical memory bottlenecks common with standard libraries on mass datasets.</li>
-                    <li>Deployed an interactive analytical dashboard tracking key route performance, peak volume hours, and bottleneck vectors.</li>
+                    <li>Processed over 750,000 transit records using a Medallion Architecture (Bronze, Silver, Gold stages) inside Docker containers.</li>
+                    <li>Used Polars for ultra-fast, multi-threaded cleaning scripts to prevent system slow-downs.</li>
+                    <li>Built a live Streamlit dashboard to cleanly show peak hours, route volumes, and traffic trends.</li>
                 </ul>
+                <!-- Image Placeholder for Step 2 -->
+                <!-- <img src="transit-dashboard.png" alt="Streamlit Dashboard Analytics" class="project-img"> -->
                 <div class="project-links">
-       <a href="https://github.com/KomalWalhe03/Chicago-Transit-BigData-Pipeline" target="_blank" style="background: #1e40af; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.875rem; display: inline-block; margin-top: 0.5rem;">View GitHub Repository</a>
-       </div>
-                <p><strong>Business Value:</strong> Transformed high-volume, erratic logistical metrics into clean visual data directly usable for fleet scheduling optimization.</p>
+                    <a href="https://github.com/KomalWalhe03/Chicago-Transit-Analytics" target="_blank">View GitHub Repository</a>
+                </div>
             </div>
 
             <!-- Project 4: Stroke Risk -->
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--primary);">Healthcare Analytics</span>
+                <span style="float: right; font-weight: bold; color: var(--primary);">Predictive Analytics</span>
                 <h3>Explainable Stroke Risk Evaluation System</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
-                    <span>Scikit-learn</span> <span>SMOTE</span> <span>SHAP (XAI)</span> <span>Predictive Modeling</span>
+                    <span>Scikit-learn</span> <span>SMOTE</span> <span>SHAP (XAI)</span> <span>Python</span>
                 </div>
-                <p>
-                    Developed a specialized diagnostic classification model designed to compute stroke liabilities using clinical patient metrics.
-                </p>
+                <p>Developed a medical classification model to evaluate patient metrics and accurately calculate stroke risks.</p>
                 <ul>
-                    <li>Addressed high class imbalance using synthetic sampling techniques (SMOTE) to stabilize vulnerable minority class detections.</li>
-                    <li>Applied interpretable algorithmic solutions (SHAP) to unpack feature weights, making individual risk scores clear and transparent.</li>
-                    <li>Optimized classification models, shifting evaluation metrics from a baseline accuracy toward realistic clinical precision balances.</li>
+                    <li>Balanced heavily skewed clinical data profiles using SMOTE to improve accurate predictions of high-risk cases.</li>
+                    <li>Used SHAP visualization tools to expose exactly how individual health factors (like age or blood pressure) weighted the model’s predictions.</li>
                 </ul>
-                <p><strong>Clinical Value:</strong> Created an actionable approach to diagnostic screening that allows medical staff to verify the explicit reasons behind an automated risk alert.</p>
+                <!-- Image Placeholder for Step 2 -->
+                <!-- <img src="stroke-shap.png" alt="SHAP Feature Importance Plot" class="project-img"> -->
+                <p><strong>Impact:</strong> Replaced "black box" machine learning models with explainable clinical charts, helping medical users audit and verify why an alert was triggered.</p>
             </div>
         </section>
 
-        <!-- Contact Placeholder -->
         <section id="contact" style="background: #f1f5f9; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
             <h2>Let's Connect</h2>
-            <p>I am actively seeking Data Analyst and entry-level Data Scientist roles where I can bring immediate value to data quality and insight pipelines.</p>
-            <p>Email: <strong><a href="mailto:komalw0312@gmail.com" style="color: var(--primary); text-decoration: none;">komalw0312@gmail.com</a></strong></p>
+            <p>I am actively seeking Data Analyst and entry-level Data Scientist opportunities.</p>
+            <p>Email: <strong><a href="mailto:your.actual.email@gmail.com" style="color: var(--primary); text-decoration: none;">your.actual.email@gmail.com</a></strong></p>
         </section>
+    </div>
 
 </body>
 </html>
