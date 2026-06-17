@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komal Walhe | Data Analyst | Data Scientist</title>
+    <title>Komal Walhe | Data Analyst Portfolio </title>
+
     <style>
         :root {
             --bg-color: #f8fafc;
@@ -41,7 +42,7 @@
             font-size: 1.4rem;
             font-weight: 600;
             color: var(--primary);
-            margin: 0.5rem 0 1.5rem 0;
+            margin: 0.5rem 0 0.25rem 0;
         }
         .badge-container {
             display: flex;
@@ -88,6 +89,21 @@
         .summary-box ul {
             margin: 0;
             padding-left: 1.25rem;
+        }
+        .tech-pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 1rem;
+        }
+        .tech-pill {
+            background: #ffffff;
+            color: #334155;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
         }
         .skills-grid {
             display: grid;
@@ -139,7 +155,6 @@
             margin: 1rem 0;
             display: block;
         }
-        
         .project-links {
             margin-top: 1.25rem;
         }
@@ -163,18 +178,28 @@
     <header>
         <div class="hero">
             <h1>Komal Walhe</h1>
-            <p>Data Analyst | Data Scientist</p>
-            <div class="badge-container">
-                <span class="badge">Rowan University MS in Data Science (GPA: 3.90/4.0)</span>
-                <span class="badge honors">B.E. Computer Engineering with Honors in AI</span>
+
+             <p>Data Analyst | Business Intelligence Analyst | Data Science Graduate</p>
+
+             <p style="font-size:1rem;color:#64748b;margin:0.5rem 0;">
+             Seeking Data Analyst, Business Intelligence, and Entry-Level Data Scientist Opportunities
+              </p>
+
+             <p style="font-size:1rem;color:#64748b;margin:0 0 1.25rem 0;font-weight:500;">
+             Recent M.S. Data Science Graduate | Rowan University 
+             </p>
+            <p style="font-size:0.95rem;color:#64748b;">
+<a href="mailto:komalw0312@gmail.com">
+    komalw0312@gmail.com
+</a> | 📍 New Jersey, USA
+</p>
             </div>
             <div class="links">
-                <a href="https://linkedin.com/in/komalwalhe" target="_blank">LinkedIn</a> • 
-                <a href="https://github.com/KomalWalhe03" target="_blank">GitHub</a> • 
+                <a href="https://linkedin.com/in/komalwalhe"  target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+                <a href="https://github.com/KomalWalhe03"  target="_blank" rel="noopener noreferrer">GitHub</a> • 
                 <a href="resume.pdf" download style="font-weight: bold; color: var(--secondary);">Download Resume (PDF)</a> •
                 <a href="#contact">Contact</a>
             </div>
-        </div>
     </header>
 
     <div class="container">
@@ -182,72 +207,131 @@
             <h2>Professional Summary</h2>
             <div class="summary-box">
                 <ul>
-                    <li><strong>Recent M.S. Data Science Graduate</strong> from Rowan University (GPA: 3.90) with a Bachelor's in Computer Engineering (Honors in AI).</li>
-                    <li><strong>Experienced in data analytics, machine learning, and data engineering</strong> through healthcare analytics, socio-economic research, and transportation pipeline projects.</li>
-                    <li><strong>Skilled technical toolkit:</strong> Python (Pandas, Polars), SQL, Tableau, Power BI, Excel, Docker, AWS, MLflow, and Predictive Modeling.</li>
+                    <li><strong>Experienced in data analytics, machine learning, and data engineering</strong> through projects involving healthcare analytics, predictive modeling, cloud MLOps systems, and large-scale transportation datasets.</li>
+                    <li><strong>Skilled in transforming raw data into actionable insights</strong> using Python, SQL, cloud technologies, machine learning, and modern data engineering practices.</li>
+                    <li><strong>Experienced in building end-to-end data solutions</strong> including predictive models, automated pipelines, APIs, and interactive dashboards.</li>
                 </ul>
+                <h3 style="font-size: 0.95rem; margin: 1.25rem 0 0.5rem 0; color: #475569; text-transform: uppercase; letter-spacing: 0.05em;">Featured Technologies</h3>
+                <div class="tech-pill-container">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">SQL</span>
+                    <span class="tech-pill">Tableau</span>
+                    <span class="tech-pill">Power BI</span>
+                    <span class="tech-pill">Docker</span>
+                    <span class="tech-pill">AWS (EC2/S3)</span>
+                    <span class="tech-pill">MLflow</span>
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">Pydantic</span>
+                    <span class="tech-pill">Polars</span>
+                </div>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Technical Toolkit</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <ul>
-                        <li>Python (Pandas, Polars)</li>
-                        <li>SQL</li>
-                        <li>Advanced Excel</li>
-                        <li>Tableau & Power BI</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Machine Learning</h3>
-                    <ul>
-                        <li>Predictive Modeling</li>
-                        <li>Feature Engineering</li>
-                        <li>Explainable AI (SHAP)</li>
-                        <li>Imbalanced Data (SMOTE)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Engineering & Ops</h3>
-                    <ul>
-                        <li>ETL Pipelines</li>
-                        <li>MLOps & MLflow</li>
-                        <li>Docker</li>
-                        <li>AWS Ecosystem</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+       <section id="skills">
+    <h2>Technical Toolkit</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Programming & Data Analysis</h3>
+            <ul>
+                <li>Python (Pandas, Polars, NumPy)</li>
+                <li>SQL (MySQL, PostgreSQL)</li>
+                <li>Advanced Excel</li>
+                <li>Data Cleaning & Transformation</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Visualization & BI</h3>
+            <ul>
+                <li>Tableau</li>
+                <li>Power BI</li>
+                <li>Streamlit</li>
+                <li>Plotly</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Machine Learning & AI</h3>
+            <ul>
+                <li>Scikit-Learn</li>
+                <li>XGBoost</li>
+                <li>Feature Engineering</li>
+                <li>SHAP & Explainable AI</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Data Engineering</h3>
+            <ul>
+                <li>ETL Pipelines</li>
+                <li>Docker</li>
+                <li>MongoDB</li>
+                <li>Data Pipeline Automation</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>MLOps & Cloud</h3>
+            <ul>
+                <li>AWS (EC2, S3)</li>
+                <li>MLflow</li>
+                <li>FastAPI</li>
+                <li>NannyML Monitoring</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Professional Skills</h3>
+            <ul>
+                <li>Business Intelligence</li>
+                <li>Data Storytelling</li>
+                <li>Problem Solving</li>
+                <li>Cross-Functional Collaboration</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+        <section id="education">
+    <h2>Education</h2>
+
+    <div class="skill-card">
+    <h3>Rowan University</h3>
+    <p>Master of Science in Data Science</p>
+    <p>GPA: 3.90/4.00</p>
+</div>
+
+<div class="skill-card">
+    <h3>Modern Education Society's Wadia College of Engineering</h3>
+    <p>Bachelor of Engineering in Computer Engineering (Honors in AI)</p>
+    <p>GPA: 9.09/10.00</p>
+</div>
+     </section>
 
         <section id="projects">
             <h2>Featured Projects & Experience</h2>
 
-            <!-- Project 1: IBM Lab -->
+
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--secondary);">IBM SkillsBuild Cohort</span>
-                <h3>HealthSync Mobile Platform — AI Experiential Learning Lab</h3>
+                <span style="float: right; font-weight: bold; color: var(--primary);">Data Pipeline & Analytics</span>
+                <h3>Chicago Transit Scale Pipeline & Interactive Dashboard</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
-                    <span>IBM watsonx</span> <span>IBM Granite</span> <span>Agentic AI</span> <span>Kotlin</span> <span>Python</span> <span>REST APIs</span>
+                    <span>Polars</span> <span>SQL</span> <span>Docker</span> <span>MongoDB</span> <span>Streamlit</span>
                 </div>
-                <p>Developed an AI-powered post-discharge mobile companion during a competitive 10-week IBM lab to translate complex, jargon-heavy medical summaries into structured, actionable at-home patient recovery plans.</p>
+                <p>Created a scalable data engineering pipeline to clean and extract traffic trends from massive transportation data layers.</p>
                 <ul>
-                    <li><strong>Intelligent Document Processing:</strong> Engineered a backend pipeline utilizing Python-based PDF parsing to ingest raw clinical documentation, extracting key medical entities such as medication types, precise dosages, and follow-up schedules.</li>
-                    <li><strong>Agentic AI Integration:</strong> Leveraged IBM watsonx and Granite foundation models to build generative AI workflows that parse unorganized notes into highly accurate, structured data tables.</li>
-                    <li><strong>Mobile Feature Architecture:</strong> Built a native Android frontend using Kotlin and Coroutines for asynchronous, non-blocking text extraction, serializing extracted data structures with Kotlinx.</li>
-                    <li><strong>Automated Scheduling:</strong> Integrated the Google Calendar API and the Android notification system to dynamically convert parsed medication timelines into proactive, daily digital calendar events for patients.</li>
-                    <li><strong>Privacy & Compliance:</strong> Implemented safe processing constraints to scrub sensitive attributes and eliminate personal identification identifiers, maintaining strict alignment with healthcare data compliance.</li>
+                    <li>Processed over 750,000 transit records using a Medallion Architecture (Bronze, Silver, Gold stages) inside Docker containers.</li>
+                    <li>Used Polars for high-performance data cleaning and transformation of large datasets.</li>
+                    <li>Built a live Streamlit dashboard to cleanly show peak hours, route volumes, and traffic trends.</li>
                 </ul>
-                <!-- Image Placeholder for the upcoming screenshot step -->
-                <!-- <img src="healthsync-badge.png" alt="IBM AI Certificate & Dashboard" class="project-img"> -->
+                <img src="transit-dashboard.png" alt="Streamlit Dashboard Analytics" class="project-img">
                 <div class="project-links">
-                <a href="https://github.com/KomalWalhe03/HealthSyncApp-IBMSkillsBuild" target="_blank">View GitHub Repository</a>
+                    <a href="https://github.com/KomalWalhe03/Chicago-Transit-BigData-Pipeline" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
                 </div>
             </div>
 
-            <!-- Project 2: Chicago MLOps -->
             <div class="project-card">
                 <span style="float: right; font-weight: bold; color: var(--primary);">MLOps Pipeline</span>
                 <h3>Chicago Taxi Price Prediction & Monitoring Pipeline</h3>
@@ -262,55 +346,55 @@
                 </ul>
                 <img src="mlops-diagram.png" alt="MLOps Pipeline Architecture" class="project-img">
                 <div class="project-links">
-                    <a href="https://github.com/KomalWalhe03/Chicago-Taxi-MLOps-Pipeline" target="_blank">View GitHub Repository</a>
+                    <a href="https://github.com/KomalWalhe03/Chicago-Taxi-MLOps-Pipeline" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
                 </div>
             </div>
 
-            <!-- Project 3: Chicago Transit Big Data -->
+            
+
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--primary);">Data Pipeline & Analytics</span>
-                <h3>Chicago Transit Scale Pipeline & Interactive Dashboard</h3>
+                <span style="float: right; font-weight: bold; color: var(--secondary);">IBM SkillsBuild Cohort</span>
+                <h3>HealthSync Mobile Platform — AI Experiential Learning Lab</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
-                    <span>Polars</span> <span>SQL</span> <span>Docker</span> <span>MongoDB</span> <span>Streamlit</span>
+                    <span>IBM watsonx</span> <span>IBM Granite</span> <span>Agentic AI</span> <span>Kotlin</span> <span>Python</span>
                 </div>
-                <p>Created a scalable data engineering pipeline to clean and extract traffic trends from massive transportation data layers.</p>
+                <p><strong>Selected for IBM SkillsBuild AI Lab and collaborated in a multidisciplinary team to design a healthcare-focused AI solution.</strong></p>
+                <p>Developed an AI-powered post-discharge mobile companion during a competitive 10-week IBM lab to translate complex medical summaries into structured patient recovery plans.</p>
                 <ul>
-                    <li>Processed over 750,000 transit records using a Medallion Architecture (Bronze, Silver, Gold stages) inside Docker containers.</li>
-                    <li>Used Polars for ultra-fast, multi-threaded cleaning scripts to prevent system slow-downs.</li>
-                    <li>Built a live Streamlit dashboard to cleanly show peak hours, route volumes, and traffic trends.</li>
+                    <li><strong>PDF Processing:</strong> Engineered a backend pipeline utilizing Python to ingest raw documentation and extract key medical entities.</li>
+                    <li><strong>Watsonx/Granite:</strong> Leveraged IBM foundation models to automatically organize unstructured text into accurate, formatted clinical tracking tables.</li>
+                    <li><strong>Kotlin Mobile App:</strong> Built a native Android frontend using Kotlin for asynchronous data ingestion and interface display.</li>
+                    <li><strong>Calendar Integration:</strong> Connected the Google Calendar API to dynamically turn extracted recovery timelines into proactive, daily digital notification events.</li>
                 </ul>
-                <img src="transit-dashboard.png" alt="Streamlit Dashboard Analytics" class="project-img">
                 <div class="project-links">
-                    <a href="https://github.com/KomalWalhe03/Chicago-Transit-BigData-Pipeline" target="_blank">View GitHub Repository</a>
+                    <a href="https://github.com/KomalWalhe03/HealthSyncApp-IBMSkillsBuild" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
                 </div>
             </div>
 
-            <!-- Project 4: Stroke Risk -->
             <div class="project-card">
-                <span style="float: right; font-weight: bold; color: var(--primary);">Predictive Analytics</span>
-                <h3>Explainable Stroke Risk Evaluation System</h3>
+                <span style="float: right; font-weight: bold; color: var(--primary);">Backend Engineering</span>
+                <h3>Insurance Risk Automation Engine</h3>
                 <div class="tech-tags" style="margin-bottom: 1rem;">
-                    <span>Random Forest</span> <span>SMOTE</span> <span>SHAP (XAI)</span> <span>Scikit-learn</span> <span>Python</span>
+                    <span>Pydantic</span> <span>Python Testing</span> <span>Logging</span> <span>SQL</span>
                 </div>
-                <p>Developed a medical classification dashboard evaluating key clinical patient metrics to identify high-liability stroke indicators accurately.</p>
+                <p>Developed a production-style algorithmic engine to ingest user parameters, validate schemas dynamically, and automate structured underwriting risk calculations.</p>
                 <ul>
-                    <li>Balanced heavily skewed health dataset profiles using SMOTE sampling to increase model identification accuracy for vulnerable true-positive cases.</li>
-                    <li>Trained and optimized a Random Forest classification model, measuring evaluation scores through custom confusion matrices to track clinical precision.</li>
-                    <li>Applied interpretable algorithmic feature charts (SHAP) to expose exactly how individual patient health metrics (such as age, hypertension, and average glucose levels) weighted the model’s risk output.</li>
+                    <li>Engineered strict input schema layers utilizing Pydantic to catch data anomalies and eliminate data type errors before computation.</li>
+                    <li>Implemented a complete automation test suite ensuring data validation rules evaluate perfectly under diverse boundary scenarios.</li>
+                    <li>Integrated centralized logging to audit processing runs, track validation issues, and improve pipeline observability.</li>
                 </ul>
-                <p><strong>Impact:</strong> Replaced standard "black box" machine learning models with explainable feature contribution graphs, allowing analytical or clinical users to verify the statistical reasoning behind every automated risk alert.</p>
                 <div class="project-links">
-                    <a href="https://github.com/KomalWalhe03/Stroke-Risk-Prediction-XAI" target="_blank">View GitHub Repository</a>
+                    <a href="https://github.com/KomalWalhe03/Insurance-Risk-Automation-Engine" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
                 </div>
             </div>
-        </section>
 
-        <section id="contact" style="background: #f1f5f9; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
-            <h2>Let's Connect</h2>
-            <p>I am actively seeking Data Analyst and entry-level Data Scientist opportunities.</p>
-            <p>Email: <strong><a href="mailto:komalw0312@gmail.com" style="color: var(--primary); text-decoration: none;">komalw0312@gmail.com</a></strong></p>
-        </section>
+            <h2>Additional Projects</h2>
+                    </section>
     </div>
+
+    <footer style="text-align:center;padding:2rem;color:#64748b;">
+        © 2026 Komal Walhe | Data Analyst Portfolio
+    </footer>
 
 </body>
 </html>
